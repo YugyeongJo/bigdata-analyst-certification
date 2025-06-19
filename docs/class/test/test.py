@@ -21,7 +21,7 @@ X_train = pd.get_dummies(X_train)
 
 X_train, X_test = X_train.align(X_test, join='left', axis=1, fill_value=0)
 
-# print(X_test.shape, X_train.shape)
+print(X_test.shape, X_train.shape)
 # print(X_test.head())
 
 train_X, val_X, train_y, val_y = train_test_split(X_train, y_train, test_size=0.2, random_state=42)
